@@ -48,13 +48,14 @@ function addToCart(productId) {
 }
 
 // Remove item from cart
-function removeFromCart(productId) {
+function removeFromCart(productId) { 
 }
 
 // Clear cart
 function clearCart() {
-	cartList.innerHTML=``;
-	cart=[]
+	cartList.innerHTML=``; 
+	cart=[] 
+	sessionStorage.removeItem("cart")
 	renderCart();
 }
 // Initial render
